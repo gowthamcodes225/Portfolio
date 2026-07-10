@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gowtham | Aspiring Python Full Stack Developer</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!-- Custom -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+    <div class="loader-brackets">
+        <span>&lt;</span>
+        <div class="loader-dot"></div>
+        <span>/&gt;</span>
+    </div>
+</div>
+
+<!-- ============ BACKGROUND BLOBS ============ -->
+<div class="bg-shapes" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="shape shape-cube"></div>
+    <div class="shape shape-ring"></div>
+    <div class="shape shape-sphere"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand logo" href="#home">Gowtham<span class="dot">.S</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+            <span class="toggler-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6">
+                <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+
+                <h1 class="hero-name" id="heroName">Gowtham</h1>
+
+                <h2 class="hero-role"><span class="typed-role"></span><span class="cursor">|</span></h2>
+
+                <p class="description">
+                    Building end-to-end web applications with Python on the backend
+                    and modern JavaScript on the frontend — from database design to
+                    deployed UI.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="image/resume.jpg" download="Gowtham_Resume.jpg" class="btn btn-grad">
+                        <i class="fa-solid fa-download me-2"></i>Download Resume
+                    </a>
+                    <a href="#projects" class="btn btn-outline-glass">
+                        <i class="fa-solid fa-diagram-project me-2"></i>View Projects
+                    </a>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/gowthamcodes225" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ur_fav._star.__/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Code"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="hero-visual">
+
+                    <div class="code-window" data-tilt>
+                        <div class="window-bar">
+                            <div class="window-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="branch"><i class="fa-solid fa-code-branch"></i> main</span>
+                        </div>
+
+                        <div class="tab-strip">
+                            <button class="code-tab active" data-tab="profile">profile.py</button>
+                            <button class="code-tab" data-tab="skills">skills.js</button>
+                            <button class="code-tab" data-tab="about">about.md</button>
+                        </div>
+
+                        <div class="window-body">
+<pre class="tab-pane active" data-pane="profile"><code><span class="c-key">class</span> <span class="c-class">Developer</span>:
+    <span class="c-fn">def</span> <span class="c-fn2">__init__</span>(self):
+        self.name = <span class="c-str">"Gowtham"</span>
+        self.role = <span class="c-str">"Python Full Stack Dev"</span>
+        self.stack = [
+            <span class="c-str">"Python"</span>, <span class="c-str">"Bootstrap"</span>,
+            <span class="c-str">"React"</span>, <span class="c-str">"Tailwind"</span>
+        ]
+        self.based_in = <span class="c-str">"Chennai, IN"</span>
+        self.status = <span class="c-str">"Open to work"</span></code></pre>
+
+<pre class="tab-pane" data-pane="skills"><code><span class="c-key">const</span> <span class="c-fn2">skills</span> = {
+  languages: [<span class="c-str">"Python"</span>, <span class="c-str">"JavaScript"</span>],
+  frontend: [<span class="c-str">"React"</span>, <span class="c-str">"Bootstrap"</span>],
+  tools: [<span class="c-str">"Git"</span>, <span class="c-str">"GitHub"</span>]
+};
+
+<span class="c-fn">export default</span> skills;</code></pre>
+
+<pre class="tab-pane" data-pane="about"><code><span class="c-key"># </span><span class="c-class">About Gowtham</span>
+
+<span class="c-str">- B.Sc Computer Science, Univ. of Madras</span>
+<span class="c-str">- Loves building full-stack apps</span>
+<span class="c-str">- Currently: Open to opportunities</span></code></pre>
+                        </div>
+                    </div>
+
+                    <div class="profile-frame" data-tilt>
+                        <img src="image/profile.png" alt="Gowtham profile photo">
+                    </div>
+
+                    <div class="floating-badge badge-1"><i class="fa-brands fa-python"></i></div>
+                    <div class="floating-badge badge-2"><i class="fa-brands fa-react"></i></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+    </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-purple">01_about.py</span>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-5" data-reveal>
+                <div class="about-image" data-tilt>
+                    <img src="image/profile.png" alt="Gowtham">
+                </div>
+            </div>
+
+            <div class="col-lg-7" data-reveal>
+                <h3>Who am I?</h3>
+                <p>
+                    I'm Gowtham, an aspiring Python Full Stack Developer currently
+                    pursuing B.Sc Computer Science at St. Joseph Arts and Science
+                    College, affiliated with the University of Madras. I enjoy building
+                    complete applications — designing the backend logic in Python,
+                    exposing clean REST APIs, and pairing them with responsive,
+                    interactive frontends.
+                </p>
+
+                <div class="row row-cols-1 row-cols-sm-3 g-3 about-info">
+                    <div class="col">
+                        <div class="info-card" data-tilt>
+                            <h4>Education</h4>
+                            <span>B.Sc Computer Science</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card" data-tilt>
+                            <h4>Experience</h4>
+                            <span>Fresher</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card" data-tilt>
+                            <h4>Location</h4>
+                            <span>Chennai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-yellow">02_skills.py</span>
+            <h2>Skills</h2>
+            <p>Technologies I'm currently working with</p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-3 g-lg-4">
+
+            <div class="col" data-reveal>
+                <div class="skill-card featured-skill" data-tilt>
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <svg viewBox="0 0 54 33" class="tw-icon" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#8be9fd" fill-rule="evenodd" clip-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653 2.647 2.688 5.71 5.797 12.403 5.797 7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"/>
+                    </svg>
+                    <h3>Tailwind CSS</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="skill-card" data-tilt>
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-cyan">03_education.py</span>
+            <h2>Education</h2>
+        </div>
+
+        <div class="timeline mx-auto" data-reveal>
+            <div class="timeline-card" data-tilt>
+                <span class="year">2024 - 2027</span>
+                <h3>B.Sc Computer Science</h3>
+                <p>St. Joseph Arts and Science College, Kovur, Chennai.</p>
+                <p>Affiliated to University of Madras</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-purple">04_projects.py</span>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <div class="col" data-reveal>
+                <div class="project-card h-100" data-tilt>
+                    <div class="project-img">
+                        <img src="image/screenshot.png" alt="Portfolio project screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            Modern responsive portfolio with 3D tilt interactions,
+                            glassmorphism UI, and a code-editor themed hero section.
+                        </p>
+                        <div class="tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gowthamcodes225"><i class="fab fa-github me-2"></i>GitHub</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section id="certificates">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-yellow">05_certificates.py</span>
+            <h2>Certificates</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
+
+            <div class="col" data-reveal>
+                <div class="certificate-card" data-tilt data-bs-toggle="modal" data-bs-target="#certModal" data-img="image/Web development certificate.jpg" data-title="Web Development Certificate">
+                    <img src="image/Web development certificate.jpg" alt="Web Development Certificate">
+                    <div class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <h3>Web Development Certificate</h3>
+                    <p>HTML • CSS • JavaScript</p>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="certificate-card" data-tilt data-bs-toggle="modal" data-bs-target="#certModal" data-img="image/intern.png" data-title="Internship Certificate">
+                    <img src="image/intern.png" alt="Internship Certificate">
+                    <div class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <h3>Internship Certificate</h3>
+                    <p>Frontend Development</p>
+                </div>
+            </div>
+
+            <div class="col" data-reveal>
+                <div class="certificate-card" data-tilt data-bs-toggle="modal" data-bs-target="#certModal" data-img="image/python_certificate.png" data-title="Python Certificate">
+                    <img src="image/python_certificate.png" alt="Python Certificate">
+                    <div class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <h3>Python Certificate</h3>
+                    <p>Python Programming</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalTitle">Certificate</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="certModalImg" src="" alt="Certificate preview" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="file-tab tab-cyan">06_contact.py</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form class="contact-form mx-auto" id="contactForm" data-reveal novalidate>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col-12">
+                    <textarea rows="6" class="form-control" placeholder="Write your message..." required></textarea>
+                </div>
+                <div class="col-12 text-center text-md-start">
+                    <button class="btn btn-grad" type="submit">
+                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-4">
+    <div id="sendToast" class="toast align-items-center border-0" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                Message sent! I'll get back to you soon.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <div class="container">
+        <h2>Gowtham</h2>
+        <p>Aspiring Python Full Stack Developer</p>
+
+        <div class="footer-socials">
+            <a href="https://github.com/gowthamcodes225"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/ur_fav._star.__/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-code"></i></a>
+        </div>
+
+        <p class="copyright">© 2026 Gowtham. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

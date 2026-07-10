@@ -264,11 +264,6 @@ HERO VISUAL — CODE WINDOW + TABS + PROFILE FRAME
 .badge-1{ top:-6%; left:-4%; color:var(--yellow); animation-delay:.5s; }
 .badge-2{ bottom:12%; left:-8%; color:var(--cyan); animation-delay:1.5s; }
 
-@media(max-width:576px){
-    .profile-frame{ width:96px; height:96px; right:0; bottom:-6%; }
-    .floating-badge{ display:none; }
-}
-
 .scroll-hint{
     position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
     width:26px; height:42px; border:2px solid var(--border); border-radius:16px;
@@ -475,36 +470,111 @@ SCROLLBAR
 ::-webkit-scrollbar-thumb{ background:var(--grad-main); border-radius:20px; }
 
 /*==================================================
-RESPONSIVE — TABLET
+RESPONSIVE — LAPTOP/TABLET (≤992px)
 ==================================================*/
 @media(max-width:992px){
     .hero{ text-align:center; padding:150px 0 90px; }
     .description{ margin-left:auto; margin-right:auto; }
     .hero-btns, .socials, .terminal-line{ justify-content:center; display:flex; }
     .hero-visual{ margin-top:20px; }
+
+    .code-window{ max-width:380px; margin:0 auto; }
+    .profile-frame{ width:120px; height:120px; }
 }
 
 /*==================================================
-RESPONSIVE — MOBILE
+NAVBAR — MOBILE DROPDOWN FIX
+==================================================*/
+@media(max-width:991.98px){
+    .navbar-collapse{
+        background:rgba(15,17,24,.97);
+        backdrop-filter:blur(18px);
+        border:1px solid var(--border);
+        border-radius:16px;
+        margin-top:14px;
+        padding:18px;
+    }
+    .navbar-nav .nav-link{
+        padding:.75rem 1rem !important;
+        border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .navbar-nav .nav-item:last-child .nav-link{ border-bottom:none; }
+    .nav-cta{ text-align:center; margin-left:0; margin-top:10px; }
+}
+
+/*==================================================
+SHAPES — MOBILE (kept from your original)
+==================================================*/
+@media(max-width:768px){ .shape{ opacity:.14; transform:scale(.7); } }
+
+/*==================================================
+RESPONSIVE — MOBILE (≤768px)
 ==================================================*/
 @media(max-width:768px){
+    .container{ padding-left:20px; padding-right:20px; }
+
     section{ padding:90px 0; }
     .section-title{ margin-bottom:50px; }
-    .hero{ padding:130px 0 90px; }
-    .hero-btns{ flex-direction:column; }
+
+    .hero{ padding:130px 0 70px; }
+    .hero-name{ font-size:clamp(2.2rem,10vw,3rem); }
+    .hero-btns{ flex-direction:column; width:100%; }
     .btn-grad, .btn-outline-glass{ width:100%; }
+
+    .hero-visual{ padding:20px 0 50px; }
     .code-window{ max-width:100%; }
-    .window-body pre{ font-size:12px; }
+    .window-body{ padding:16px; min-height:auto; }
+    .window-body pre{ font-size:11.5px; line-height:1.7; }
+    .tab-strip{ -webkit-overflow-scrolling:touch; }
+
+    .profile-frame{
+        position:static;
+        width:110px; height:110px;
+        margin:20px auto 0;
+    }
+    .floating-badge{ display:none; }
+
     #about h3{ font-size:26px; text-align:center; }
     .about-content p{ text-align:center; }
+
+    .about-info{ text-align:center; }
+
+    .timeline-card{ padding:24px; }
+
     footer h2{ font-size:28px; }
 }
 
-@media(max-width:500px){
-    .section-title h2{ font-size:26px; }
-    .section-title p{ font-size:15px; }
-    .about-image img{ max-width:280px; }
+/*==================================================
+RESPONSIVE — SMALL MOBILE (≤576px)
+==================================================*/
+@media(max-width:576px){
+    .terminal-line{ font-size:13px; }
+    .description{ font-size:15.5px; }
+
+    .socials a{ width:44px; height:44px; font-size:17px; }
+
+    .skill-card{ padding:26px 10px; }
+    .skill-card i, .skill-card .tw-icon{ font-size:36px; margin-bottom:12px; }
+    .skill-card h3{ font-size:14px; }
+
+    .project-content{ padding:22px; }
+    .project-content h3{ font-size:21px; }
+
+    .certificate-card img{ height:130px; }
+}
+
+/*==================================================
+RESPONSIVE — EXTRA SMALL (≤400px)
+==================================================*/
+@media(max-width:400px){
+    .section-title h2{ font-size:24px; }
+    .section-title p{ font-size:14.5px; }
+
+    .about-image img{ max-width:240px; }
     .project-links{ flex-direction:column; }
+
+    .contact-form .form-control{ padding:14px 16px; font-size:15px; }
+
     #backToTop{ width:44px; height:44px; bottom:20px; right:20px; }
 }
 
